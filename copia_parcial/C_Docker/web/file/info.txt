@@ -1,0 +1,5 @@
+Información de modelo de CPU:
+model name	: 12th Gen Intel(R) Core(TM) i7-12700K
+
+Comando usado: grep "model name" /proc/cpuinfo | head -n 1
+hola

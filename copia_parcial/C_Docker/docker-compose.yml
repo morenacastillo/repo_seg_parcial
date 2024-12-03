@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    web:
+        image: 2p_2024_castillo_prueba 
+        ports:
+            - "8081:80"
+        volumes:
+            - ./web:/usr/share/nginx/html
+~
+~

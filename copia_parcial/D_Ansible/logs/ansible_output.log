@@ -1,0 +1,70 @@
+2024-12-03 05:02:03,932 p=13135 u=vagrant n=ansible | PLAY [Crear el grupo G2p_2024_Defensa] ****************************************************************************************************************************************************************************************************************************************
+2024-12-03 05:02:03,947 p=13135 u=vagrant n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************************************************************************
+2024-12-03 05:02:05,354 p=13135 u=vagrant n=ansible | ok: [localhost]
+2024-12-03 05:02:05,372 p=13135 u=vagrant n=ansible | TASK [2p_Castillo : Crear el grupo G2p_2024_Defensa] **************************************************************************************************************************************************************************************************************************
+2024-12-03 05:02:05,788 p=13135 u=vagrant n=ansible | changed: [localhost]
+2024-12-03 05:02:05,812 p=13135 u=vagrant n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************************************************************************
+2024-12-03 05:02:05,812 p=13135 u=vagrant n=ansible | localhost                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-12-03 05:02:11,876 p=13278 u=vagrant n=ansible | PLAY [Crear el grupo G2p_2024_Defensa] ****************************************************************************************************************************************************************************************************************************************
+2024-12-03 05:02:11,887 p=13278 u=vagrant n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************************************************************************
+2024-12-03 05:02:13,262 p=13278 u=vagrant n=ansible | ok: [localhost]
+2024-12-03 05:02:13,273 p=13278 u=vagrant n=ansible | TASK [2p_Castillo : Crear el grupo G2p_2024_Defensa] **************************************************************************************************************************************************************************************************************************
+2024-12-03 05:02:13,728 p=13278 u=vagrant n=ansible | ok: [localhost]
+2024-12-03 05:02:13,744 p=13278 u=vagrant n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************************************************************************
+2024-12-03 05:02:13,744 p=13278 u=vagrant n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-12-03 06:01:36,324 p=13814 u=vagrant n=ansible | PLAY [Crear el grupo G2p_2024_Defensa] ************************************************************************************************
+2024-12-03 06:01:36,673 p=13814 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2024-12-03 06:01:44,916 p=13814 u=vagrant n=ansible | ok: [localhost]
+2024-12-03 06:01:44,926 p=13814 u=vagrant n=ansible | TASK [2p_Castillo : Crear el grupo G2p_2024_Defensa] **********************************************************************************
+2024-12-03 06:01:47,347 p=13814 u=vagrant n=ansible | ok: [localhost]
+2024-12-03 06:01:47,363 p=13814 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************************
+2024-12-03 06:01:47,363 p=13814 u=vagrant n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-12-03 06:13:54,311 p=23094 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-12-03 06:13:54,499 p=23094 u=vagrant n=ansible | PLAY [Crear el grupo G2p_2024_Defensa] ************************************************************************************************
+2024-12-03 06:13:54,509 p=23094 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2024-12-03 06:13:54,661 p=23094 u=vagrant n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nvagrant@127.0.0.1: Permission denied (publickey,password).", "unreachable": true}
+2024-12-03 06:13:55,816 p=23094 u=vagrant n=ansible | ok: [localhost]
+2024-12-03 06:13:55,827 p=23094 u=vagrant n=ansible | TASK [2p_Castillo : Crear el grupo G2p_2024_Defensa] **********************************************************************************
+2024-12-03 06:13:56,145 p=23094 u=vagrant n=ansible | ok: [localhost]
+2024-12-03 06:13:56,160 p=23094 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************************
+2024-12-03 06:13:56,161 p=23094 u=vagrant n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-12-03 06:13:56,161 p=23094 u=vagrant n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-12-03 06:19:47,018 p=23338 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-12-03 06:19:47,165 p=23338 u=vagrant n=ansible | PLAY [Crear el grupo G2p_2024_Defensa] ************************************************************************************************
+2024-12-03 06:19:47,177 p=23338 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2024-12-03 06:19:47,431 p=23338 u=vagrant n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nvagrant@127.0.0.1: Permission denied (publickey,password).", "unreachable": true}
+2024-12-03 06:19:49,792 p=23338 u=vagrant n=ansible | ok: [localhost]
+2024-12-03 06:19:50,437 p=23338 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-12-03 06:19:50,473 p=23338 u=vagrant n=ansible | TASK [2p_Castillo : Crear el grupo G2p_2024_Defensa] **********************************************************************************
+2024-12-03 06:19:51,142 p=23338 u=vagrant n=ansible | ok: [localhost]
+2024-12-03 06:19:51,197 p=23338 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-12-03 06:19:51,214 p=23338 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************************
+2024-12-03 06:19:51,214 p=23338 u=vagrant n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-12-03 06:19:51,214 p=23338 u=vagrant n=ansible | 192.168.56.4               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-12-03 06:19:51,216 p=23338 u=vagrant n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-12-03 06:30:38,324 p=24162 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-12-03 06:30:38,636 p=24162 u=vagrant n=ansible | PLAY [Crear el grupo G2p_2024_Defensa] ************************************************************************************************
+2024-12-03 06:30:38,821 p=24162 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2024-12-03 06:30:55,923 p=24162 u=vagrant n=ansible | ok: [localhost]
+2024-12-03 06:31:00,373 p=24162 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-12-03 06:31:00,394 p=24162 u=vagrant n=ansible | TASK [2p_Castillo : Crear el grupo G2p_2024_Defensa] **********************************************************************************
+2024-12-03 06:31:03,726 p=24162 u=vagrant n=ansible | ok: [localhost]
+2024-12-03 06:31:04,004 p=24162 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-12-03 06:31:04,012 p=24162 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************************
+2024-12-03 06:31:04,606 p=24162 u=vagrant n=ansible | 127.0.0.1                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-12-03 06:31:04,607 p=24162 u=vagrant n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-12-03 06:35:10,532 p=24523 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-12-03 06:35:10,638 p=24523 u=vagrant n=ansible | PLAY [Crear el grupo G2p_2024_Defensa] ************************************************************************************************
+2024-12-03 06:35:10,649 p=24523 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2024-12-03 06:35:13,154 p=24523 u=vagrant n=ansible | ok: [localhost]
+2024-12-03 06:35:13,656 p=24523 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-12-03 06:35:13,674 p=24523 u=vagrant n=ansible | TASK [2p_Castillo : Crear el grupo G2p_2024_Defensa] **********************************************************************************
+2024-12-03 06:35:14,292 p=24523 u=vagrant n=ansible | ok: [localhost]
+2024-12-03 06:35:14,353 p=24523 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-12-03 06:35:14,368 p=24523 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************************
+2024-12-03 06:35:14,369 p=24523 u=vagrant n=ansible | 127.0.0.1                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-12-03 06:35:14,369 p=24523 u=vagrant n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

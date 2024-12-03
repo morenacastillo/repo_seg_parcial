@@ -1,0 +1,5 @@
+---
+- name: Crear el grupo G2p_2024_Defensa
+  group:
+    name: G2p_2024_Defensa
+    state: present

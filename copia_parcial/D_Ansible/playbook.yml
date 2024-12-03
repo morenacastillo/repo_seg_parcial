@@ -1,0 +1,6 @@
+---
+- name: Crear el grupo G2p_2024_Defensa
+  hosts: all
+  become: true
+  roles:
+    - 2p_Castillo
