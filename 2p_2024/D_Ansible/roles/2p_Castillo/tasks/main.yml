@@ -1,0 +1,12 @@
+---
+# tasks file for 2p_Castillo
+
+- name: Instalar figlet
+  apt:
+    name: figlet
+    state: present
+  become: true
+
+
+
+

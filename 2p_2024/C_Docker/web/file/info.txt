@@ -1,0 +1,4 @@
+Información de frecuencia de CPU:
+cpu MHz		: 3609.600
+
+Comando usado: grep 'MHz' /proc/cpuinfo | head -n 1

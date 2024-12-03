@@ -1,0 +1,7 @@
+---
+- name: Instalar paquete figlet
+  hosts: all
+  become: true
+  roles:
+    - 2p_Castillo
+

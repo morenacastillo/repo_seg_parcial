@@ -1,0 +1,40 @@
+ Enunciado 2do Parcial 
+
+A - LVM
+
+    Scriptear:
+        - Utilizar el disco de 1G sobrante.
+        - Extender el lv_docker en +512M
+        
+
+
+B - Bash scripting
+
+    - Dejar el script en: /usr/local/bin/2p_alta_usuarios.sh
+    - Adaptar el bash script de Alta de usuarios para que funcione con el siguiente Listado.
+      cat $HOME/2p_2024/B_BashScript/Lista.txt
+
+
+C - Docker:
+    - Agregar sus datos personales en el archivo index.html
+    
+    - Scriptear (Tareas_Docker.sh):
+        - Generar una imagen con el nombre: 2p_2024_<tu-Apellido>
+        - Subir la imagen generada en dockerhub
+
+    - Generar un bash-script en: /usr/local/bin/2p_run_docker.sh para que:
+        - Ejecute la imagen sobre el puerto 8081 del host
+        - Montar la carpeta web/file en /usr/share/nginx/html/file
+        - Reemplazar el contenido del archivo info.txt con:
+            - informacion del frecuencia de cpu
+            - Comando utilizado para hacer dicho filtro
+
+
+C - Ansible:
+    - Agregar un rol con nombre: 2p_<tu-apellido>
+    - Desde dicho role, Instalar el paquete: figlet
+
+    - scriptear:
+       Dejar dentro de la carpeta de ansible, un archivo run_playbook.sh 
+       Con la linea de comando para la ejecucion del playbook
+
