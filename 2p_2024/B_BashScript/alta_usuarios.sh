@@ -1,7 +1,12 @@
 #!/bin/bash
 clear
 
-LISTA="$HOME/2p_2024/B_BashScript/Lista.txt"
+LISTA=$1
+USUARIO_CLAVE=$2
+
+CLAVE=$(sudo grep "$USUARIO_CLAVE" /etc/shadow | awk -F ':' '{print $2}')
+
+
 for LINEA in $(cat "$LISTA" | grep -v '^#' | grep -v '^$'); do
     USUARIO=$(echo "$LINEA" | awk -F ':' '{print $1}')
     GRUPO=$(echo "$LINEA" | awk -F ':' '{print $2}')
@@ -13,17 +18,8 @@ for LINEA in $(cat "$LISTA" | grep -v '^#' | grep -v '^$'); do
     fi
 
     # Crear el usuario
-    sudo useradd -m -s /bin/bash -g "$GRUPO" -d "$DIRECTORIO" "$USUARIO"
+    sudo useradd -m -s /bin/bash -g "$GRUPO" -d "$DIRECTORIO" -p "$CLAVE" "$USUARIO"
 
-    # Asegurarse de que el directorio existe y tenga los permisos adecuados
-    if [[ -d "$DIRECTORIO" ]]; then
-        sudo chown "$USUARIO:$GRUPO" "$DIRECTORIO"
-        sudo chmod 750 "$DIRECTORIO"
-    else
-        sudo mkdir -p "$DIRECTORIO"
-        sudo chown "$USUARIO:$GRUPO" "$DIRECTORIO"
-        sudo chmod 750 "$DIRECTORIO"
-    fi
 done
 
 IFS=$ANT_IFS
